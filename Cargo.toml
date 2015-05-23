@@ -1,0 +1,16 @@
+[package]
+name = "nrf51822"
+version = "0.0.1"
+authors = ["Eric Stutzenberger <eric.stutzenberger@rigado.com>"]
+
+[dependencies.core]
+git = "https://github.com/japaric/core.rs"
+
+[dependencies.cortex]
+path = "../cortex.rs"
+
+[dependencies.reg]
+git = "https://github.com/japaric/reg.rs"
+
+[dependencies.volatile]
+git = "https://github.com/japaric/volatile.rs"
