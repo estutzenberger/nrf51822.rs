@@ -7,7 +7,7 @@ authors = ["Eric Stutzenberger <eric.stutzenberger@rigado.com>"]
 git = "https://github.com/japaric/core.rs"
 
 [dependencies.cortex]
-path = "../cortex.rs"
+git = "https://github.com/estutzenberger/cortex.rs"
 
 [dependencies.reg]
 git = "https://github.com/japaric/reg.rs"
