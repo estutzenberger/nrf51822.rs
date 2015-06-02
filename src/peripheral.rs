@@ -23,8 +23,8 @@ extern {
 	// static __ECB__: ::ecb::Ecb;
 	// static __AAR__: ::aar::Aar;
 	// static __CCM__: ::ccm::Ccm;
-	// static __WDT__: ::wdt::Wdt;
-	// static __RTC1__: ::rtc::Rtc;
+	static __WDT__: ::wdt::Wdt;
+	static __RTC1__: ::rtc::Rtc;
 	// static __QDEC__: ::qdec::Qdec;
 	// static __LPCOMP__: ::lpcomp::Lpcomp;
 	// static __SWI__: ::swi::Swi;
@@ -132,13 +132,13 @@ pub fn rtc0() -> &'static ::rtc::Rtc {
 // 	&__CCM__
 // }
 // // #define NRF_WDT_BASE                    0x40010000UL
-// pub fn wdt() -> &'static ::wdt::Wdt {
-// 	&__WDT__
-// }
+pub fn wdt() -> &'static ::wdt::Wdt {
+	&__WDT__
+}
 // // #define NRF_RTC1_BASE                   0x40011000UL
-// pub fn rtc1() -> &'static ::rtc::Rtc {
-// 	&__RTC__
-// }
+pub fn rtc1() -> &'static ::rtc::Rtc {
+	&__RTC1__
+}
 // // #define NRF_QDEC_BASE                   0x40012000UL
 // pub fn qdec() -> &'static ::qdec::Qdec {
 // 	&__QDEC__

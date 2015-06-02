@@ -29,6 +29,7 @@ pub mod ficr;
 pub mod gpio;
 pub mod rtc;
 pub mod adc;
+pub mod wdt;
 
 fn reset_peripherals() {
     let power = peripheral::power();

@@ -95,4 +95,5 @@ pub static VECTOR: [Option<unsafe extern fn()>; 32] = [
 
 pub enum IntVector {
     RTC0Irqn = 11,
+    RTC1Irqn = 17,
 }
